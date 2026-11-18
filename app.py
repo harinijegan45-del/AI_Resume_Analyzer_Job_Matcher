@@ -33,8 +33,8 @@ def extract_text(uploaded_file):
 
 def clean_text(text):
     text = text.lower()
-    text = re.sub(r"[^a-z0-9+#.\\s]", " ", text)
-    return re.sub(r"\\s+", " ", text).strip()
+    text = re.sub(r"[^a-z0-9+#.\s]", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
 
 SKILLS = [
     "python", "java", "sql", "html", "css", "javascript", "react",
